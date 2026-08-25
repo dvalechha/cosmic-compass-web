@@ -1,0 +1,7 @@
+{
+  "name": "cosmic-compass-web",
+  "private": true,
+  "scripts": {
+    "test": "node --test tests/*.test.mjs"
+  }
+}
