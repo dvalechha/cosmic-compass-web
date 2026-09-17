@@ -6,6 +6,9 @@ The confirmation landing page now treats the Supabase callback fragment as
 untrusted, short-lived input. It distinguishes a complete implicit signup
 result, Supabase's bounded `otp_expired` result, and all malformed or unknown
 states. Unknown input fails closed instead of displaying confirmation success.
+The bounded `otp_expired` copy explains that the link may already have been
+used, may be invalid, or may have expired because Supabase does not reliably
+distinguish those cases.
 
 The page remains informational. It does not initialize Supabase, establish a
 browser session, call application APIs, or write auth state to storage.

@@ -139,11 +139,11 @@ test("reused or expired callback renders bounded invalid-link state", () => {
   assert.deepEqual(page.replacedUrls, ["/confirmed.html"]);
   assert.equal(
     page.elements.heading.textContent,
-    "Confirmation link unavailable",
+    "Confirmation link invalid or expired",
   );
   assert.match(
     page.elements["status-message"].textContent,
-    /invalid or has expired/i,
+    /already been used, is invalid, or has expired/i,
   );
   assert.doesNotMatch(page.elements["status-message"].textContent, /confirmed/i);
   assert.doesNotMatch(

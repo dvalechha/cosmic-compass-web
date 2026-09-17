@@ -4,7 +4,7 @@
   const SUCCESS_MESSAGE =
     "Your email is confirmed. You can return to Cosmic Compass and log in.";
   const INVALID_LINK_MESSAGE =
-    "This confirmation link is invalid or has expired. Please return to Cosmic Compass and request a new confirmation email if needed.";
+    "This confirmation link has already been used, is invalid, or has expired. Please return to Cosmic Compass and request a new confirmation email if needed.";
   const GENERIC_FAILURE_MESSAGE =
     "We couldn't confirm this email from this link. Please return to Cosmic Compass and try again.";
 
@@ -51,7 +51,7 @@
     }
 
     if (state === "invalid") {
-      heading.textContent = "Confirmation link unavailable";
+      heading.textContent = "Confirmation link invalid or expired";
       statusMessage.textContent = INVALID_LINK_MESSAGE;
       return;
     }
