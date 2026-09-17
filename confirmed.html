@@ -2,48 +2,20 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'; img-src 'none'; font-src 'none'; media-src 'none'; frame-src 'none'; worker-src 'none'; manifest-src 'none'">
+<meta http-equiv="Cache-Control" content="no-store">
+<meta name="referrer" content="no-referrer">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Cosmic Compass — Email Confirmed</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap" rel="stylesheet">
-<style>
-  html, body {
-    height: 100%;
-    margin: 0;
-  }
-  body {
-    background: #F7F2FA;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    color: #3A3450;
-    padding: 24px;
-    box-sizing: border-box;
-  }
-  main {
-    text-align: center;
-    max-width: 480px;
-  }
-  h1 {
-    font-family: "Cormorant Garamond", Georgia, "Times New Roman", serif;
-    font-weight: 600;
-    font-size: 2.5rem;
-    color: #7C5CFC;
-    margin: 0 0 16px;
-  }
-  p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin: 0;
-  }
-</style>
+<title>Cosmic Compass — Email Confirmation</title>
+<link rel="stylesheet" href="./assets/reset-password.css">
+<script defer src="./assets/confirmation.js"></script>
 </head>
 <body>
 <main>
-  <h1>You&rsquo;re confirmed!</h1>
-  <p>Your email is confirmed. Head back to the Cosmic Compass app to see your chart.</p>
+  <h1 id="heading">Checking your link&hellip;</h1>
+  <p id="status-message" role="status" aria-live="polite">
+    Verifying your email confirmation result.
+  </p>
 </main>
 </body>
 </html>
